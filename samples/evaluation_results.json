@@ -1,0 +1,184 @@
+{
+  "dataset": "Synthetic, hand-labeled policy/applicant cases; no real applicants or government documents",
+  "cases": 15,
+  "decisions": 30,
+  "measurement": "Median across 3 warm/cold mixed executions per case; includes PDF opening and extraction; single machine",
+  "baseline": {
+    "impact_change_detection": {
+      "tp": 6,
+      "fp": 9,
+      "fn": 0,
+      "tn": 0,
+      "precision": 0.4,
+      "recall": 1.0
+    },
+    "eligibility_decision_accuracy": null,
+    "decision_coverage": 0.0,
+    "median_runtime_ms": 2.429
+  },
+  "ruleshift": {
+    "impact_change_detection": {
+      "tp": 6,
+      "fp": 0,
+      "fn": 0,
+      "tn": 9,
+      "precision": 1.0,
+      "recall": 1.0
+    },
+    "eligibility_decision_accuracy": 1.0,
+    "decision_coverage": 1.0,
+    "median_runtime_ms": 9.298
+  },
+  "cases_detail": [
+    {
+      "policy": "student_aid",
+      "applicant": "Asha \u2013 marks tightened",
+      "expected_before": "eligible",
+      "actual_before": "eligible",
+      "expected_after": "ineligible",
+      "actual_after": "ineligible",
+      "expected_change": true,
+      "predicted_change": true
+    },
+    {
+      "policy": "student_aid",
+      "applicant": "Rohan \u2013 newly eligible",
+      "expected_before": "ineligible",
+      "actual_before": "ineligible",
+      "expected_after": "eligible",
+      "actual_after": "eligible",
+      "expected_change": true,
+      "predicted_change": true
+    },
+    {
+      "policy": "student_aid",
+      "applicant": "Meera \u2013 no impact",
+      "expected_before": "eligible",
+      "actual_before": "eligible",
+      "expected_after": "eligible",
+      "actual_after": "eligible",
+      "expected_change": false,
+      "predicted_change": false
+    },
+    {
+      "policy": "student_aid",
+      "applicant": "Nikhil \u2013 still ineligible",
+      "expected_before": "ineligible",
+      "actual_before": "ineligible",
+      "expected_after": "ineligible",
+      "actual_after": "ineligible",
+      "expected_change": false,
+      "predicted_change": false
+    },
+    {
+      "policy": "student_aid",
+      "applicant": "Unknown marks",
+      "expected_before": "undetermined",
+      "actual_before": "undetermined",
+      "expected_after": "undetermined",
+      "actual_after": "undetermined",
+      "expected_change": false,
+      "predicted_change": false
+    },
+    {
+      "policy": "student_aid",
+      "applicant": "Unknown documents",
+      "expected_before": "undetermined",
+      "actual_before": "undetermined",
+      "expected_after": "undetermined",
+      "actual_after": "undetermined",
+      "expected_change": false,
+      "predicted_change": false
+    },
+    {
+      "policy": "fellowship",
+      "applicant": "Rita \u2013 age and deadline eased",
+      "expected_before": "ineligible",
+      "actual_before": "ineligible",
+      "expected_after": "eligible",
+      "actual_after": "eligible",
+      "expected_change": true,
+      "predicted_change": true
+    },
+    {
+      "policy": "fellowship",
+      "applicant": "Vivek \u2013 unchanged eligible",
+      "expected_before": "eligible",
+      "actual_before": "eligible",
+      "expected_after": "eligible",
+      "actual_after": "eligible",
+      "expected_change": false,
+      "predicted_change": false
+    },
+    {
+      "policy": "fellowship",
+      "applicant": "Farah \u2013 too old for both",
+      "expected_before": "ineligible",
+      "actual_before": "ineligible",
+      "expected_after": "ineligible",
+      "actual_after": "ineligible",
+      "expected_change": false,
+      "predicted_change": false
+    },
+    {
+      "policy": "fellowship",
+      "applicant": "Application date unknown",
+      "expected_before": "undetermined",
+      "actual_before": "undetermined",
+      "expected_after": "undetermined",
+      "actual_after": "undetermined",
+      "expected_change": false,
+      "predicted_change": false
+    },
+    {
+      "policy": "research_grant",
+      "applicant": "Anu \u2013 income relaxed",
+      "expected_before": "ineligible",
+      "actual_before": "ineligible",
+      "expected_after": "eligible",
+      "actual_after": "eligible",
+      "expected_change": true,
+      "predicted_change": true
+    },
+    {
+      "policy": "research_grant",
+      "applicant": "Dev \u2013 unchanged eligible",
+      "expected_before": "eligible",
+      "actual_before": "eligible",
+      "expected_after": "eligible",
+      "actual_after": "eligible",
+      "expected_change": false,
+      "predicted_change": false
+    },
+    {
+      "policy": "research_grant",
+      "applicant": "Sara \u2013 over both incomes",
+      "expected_before": "ineligible",
+      "actual_before": "ineligible",
+      "expected_after": "ineligible",
+      "actual_after": "ineligible",
+      "expected_change": false,
+      "predicted_change": false
+    },
+    {
+      "policy": "contradictory",
+      "applicant": "Isha \u2013 conflicting rules",
+      "expected_before": "eligible",
+      "actual_before": "eligible",
+      "expected_after": "undetermined",
+      "actual_after": "undetermined",
+      "expected_change": true,
+      "predicted_change": true
+    },
+    {
+      "policy": "contradictory",
+      "applicant": "Akash \u2013 conflict overrides outcome",
+      "expected_before": "ineligible",
+      "actual_before": "ineligible",
+      "expected_after": "undetermined",
+      "actual_after": "undetermined",
+      "expected_change": true,
+      "predicted_change": true
+    }
+  ]
+}

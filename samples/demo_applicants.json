@@ -1,0 +1,113 @@
+[
+  {
+    "name": "Asha \u2013 marks tightened",
+    "details": {
+      "date_of_birth": "2003-01-01",
+      "education_level": "bachelor",
+      "marks": 62,
+      "annual_income": 700000,
+      "category": "EWS",
+      "application_date": "2026-08-15",
+      "documents": [
+        "identity proof",
+        "degree certificate",
+        "income certificate"
+      ]
+    }
+  },
+  {
+    "name": "Rohan \u2013 newly eligible",
+    "details": {
+      "date_of_birth": "2000-03-01",
+      "education_level": "bachelor",
+      "marks": 80,
+      "annual_income": 820000,
+      "category": "General",
+      "application_date": "2026-09-05",
+      "documents": [
+        "identity proof",
+        "degree certificate",
+        "income certificate",
+        "residence proof"
+      ]
+    }
+  },
+  {
+    "name": "Meera \u2013 no impact",
+    "details": {
+      "date_of_birth": "2002-02-01",
+      "education_level": "bachelor",
+      "marks": 74,
+      "annual_income": 730000,
+      "category": "OBC",
+      "application_date": "2026-08-01",
+      "documents": [
+        "identity proof",
+        "degree certificate",
+        "income certificate",
+        "residence proof"
+      ]
+    }
+  },
+  {
+    "name": "Nikhil \u2013 still ineligible",
+    "details": {
+      "date_of_birth": "2006-05-15",
+      "education_level": "bachelor",
+      "marks": 55,
+      "annual_income": 500000,
+      "category": "SC",
+      "application_date": "2026-07-01",
+      "documents": [
+        "identity proof",
+        "degree certificate",
+        "income certificate",
+        "residence proof"
+      ]
+    }
+  },
+  {
+    "name": "Unknown marks",
+    "details": {
+      "date_of_birth": "2001-03-01",
+      "education_level": "bachelor",
+      "marks": null,
+      "annual_income": 500000,
+      "category": "General",
+      "application_date": "2026-08-10",
+      "documents": [
+        "identity proof",
+        "degree certificate",
+        "income certificate",
+        "residence proof"
+      ]
+    }
+  },
+  {
+    "name": "Unknown documents",
+    "details": {
+      "date_of_birth": "2002-03-01",
+      "education_level": "bachelor",
+      "marks": 80,
+      "annual_income": 500000,
+      "category": "General",
+      "application_date": "2026-08-10",
+      "documents": null
+    }
+  },
+  {
+    "name": "Rita \u2013 age and deadline eased",
+    "details": {
+      "date_of_birth": "1995-05-01",
+      "education_level": "master",
+      "marks": 76,
+      "annual_income": 600000,
+      "category": "General",
+      "application_date": "2026-05-15",
+      "documents": [
+        "identity proof",
+        "degree certificate"
+      ]
+    }
+  }
+]

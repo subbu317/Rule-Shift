@@ -1,0 +1,312 @@
+{
+  "version": 1,
+  "synthetic": true,
+  "cases": [
+    {
+      "policy": "student_aid",
+      "applicant": {
+        "name": "Asha \u2013 marks tightened",
+        "details": {
+          "date_of_birth": "2003-01-01",
+          "education_level": "bachelor",
+          "marks": 62,
+          "annual_income": 700000,
+          "category": "EWS",
+          "application_date": "2026-08-15",
+          "documents": [
+            "identity proof",
+            "degree certificate",
+            "income certificate"
+          ]
+        }
+      },
+      "before": "eligible",
+      "after": "ineligible"
+    },
+    {
+      "policy": "student_aid",
+      "applicant": {
+        "name": "Rohan \u2013 newly eligible",
+        "details": {
+          "date_of_birth": "2000-03-01",
+          "education_level": "bachelor",
+          "marks": 80,
+          "annual_income": 820000,
+          "category": "General",
+          "application_date": "2026-09-05",
+          "documents": [
+            "identity proof",
+            "degree certificate",
+            "income certificate",
+            "residence proof"
+          ]
+        }
+      },
+      "before": "ineligible",
+      "after": "eligible"
+    },
+    {
+      "policy": "student_aid",
+      "applicant": {
+        "name": "Meera \u2013 no impact",
+        "details": {
+          "date_of_birth": "2002-02-01",
+          "education_level": "bachelor",
+          "marks": 74,
+          "annual_income": 730000,
+          "category": "OBC",
+          "application_date": "2026-08-01",
+          "documents": [
+            "identity proof",
+            "degree certificate",
+            "income certificate",
+            "residence proof"
+          ]
+        }
+      },
+      "before": "eligible",
+      "after": "eligible"
+    },
+    {
+      "policy": "student_aid",
+      "applicant": {
+        "name": "Nikhil \u2013 still ineligible",
+        "details": {
+          "date_of_birth": "2006-05-15",
+          "education_level": "bachelor",
+          "marks": 55,
+          "annual_income": 500000,
+          "category": "SC",
+          "application_date": "2026-07-01",
+          "documents": [
+            "identity proof",
+            "degree certificate",
+            "income certificate",
+            "residence proof"
+          ]
+        }
+      },
+      "before": "ineligible",
+      "after": "ineligible"
+    },
+    {
+      "policy": "student_aid",
+      "applicant": {
+        "name": "Unknown marks",
+        "details": {
+          "date_of_birth": "2001-03-01",
+          "education_level": "bachelor",
+          "marks": null,
+          "annual_income": 500000,
+          "category": "General",
+          "application_date": "2026-08-10",
+          "documents": [
+            "identity proof",
+            "degree certificate",
+            "income certificate",
+            "residence proof"
+          ]
+        }
+      },
+      "before": "undetermined",
+      "after": "undetermined"
+    },
+    {
+      "policy": "student_aid",
+      "applicant": {
+        "name": "Unknown documents",
+        "details": {
+          "date_of_birth": "2002-03-01",
+          "education_level": "bachelor",
+          "marks": 80,
+          "annual_income": 500000,
+          "category": "General",
+          "application_date": "2026-08-10",
+          "documents": null
+        }
+      },
+      "before": "undetermined",
+      "after": "undetermined"
+    },
+    {
+      "policy": "fellowship",
+      "applicant": {
+        "name": "Rita \u2013 age and deadline eased",
+        "details": {
+          "date_of_birth": "1995-05-01",
+          "education_level": "master",
+          "marks": 76,
+          "annual_income": 600000,
+          "category": "General",
+          "application_date": "2026-05-15",
+          "documents": [
+            "identity proof",
+            "degree certificate"
+          ]
+        }
+      },
+      "before": "ineligible",
+      "after": "eligible"
+    },
+    {
+      "policy": "fellowship",
+      "applicant": {
+        "name": "Vivek \u2013 unchanged eligible",
+        "details": {
+          "date_of_birth": "1998-04-01",
+          "education_level": "master",
+          "marks": 80,
+          "annual_income": 700000,
+          "category": "OBC",
+          "application_date": "2026-04-15",
+          "documents": [
+            "identity proof",
+            "degree certificate"
+          ]
+        }
+      },
+      "before": "eligible",
+      "after": "eligible"
+    },
+    {
+      "policy": "fellowship",
+      "applicant": {
+        "name": "Farah \u2013 too old for both",
+        "details": {
+          "date_of_birth": "1991-01-01",
+          "education_level": "master",
+          "marks": 82,
+          "annual_income": 600000,
+          "category": "SC",
+          "application_date": "2026-04-15",
+          "documents": [
+            "identity proof",
+            "degree certificate"
+          ]
+        }
+      },
+      "before": "ineligible",
+      "after": "ineligible"
+    },
+    {
+      "policy": "fellowship",
+      "applicant": {
+        "name": "Application date unknown",
+        "details": {
+          "date_of_birth": "1998-04-01",
+          "education_level": "master",
+          "marks": 78,
+          "annual_income": 650000,
+          "category": "General",
+          "application_date": null,
+          "documents": [
+            "identity proof",
+            "degree certificate"
+          ]
+        }
+      },
+      "before": "undetermined",
+      "after": "undetermined"
+    },
+    {
+      "policy": "research_grant",
+      "applicant": {
+        "name": "Anu \u2013 income relaxed",
+        "details": {
+          "date_of_birth": "2001-03-01",
+          "education_level": "bachelor",
+          "marks": 72,
+          "annual_income": 1100000,
+          "category": "General",
+          "application_date": "2026-09-01",
+          "documents": [
+            "identity proof",
+            "degree certificate"
+          ]
+        }
+      },
+      "before": "ineligible",
+      "after": "eligible"
+    },
+    {
+      "policy": "research_grant",
+      "applicant": {
+        "name": "Dev \u2013 unchanged eligible",
+        "details": {
+          "date_of_birth": "2001-01-01",
+          "education_level": "master",
+          "marks": 65,
+          "annual_income": 600000,
+          "category": "OBC",
+          "application_date": "2026-09-01",
+          "documents": [
+            "identity proof",
+            "degree certificate"
+          ]
+        }
+      },
+      "before": "eligible",
+      "after": "eligible"
+    },
+    {
+      "policy": "research_grant",
+      "applicant": {
+        "name": "Sara \u2013 over both incomes",
+        "details": {
+          "date_of_birth": "2001-01-01",
+          "education_level": "bachelor",
+          "marks": 65,
+          "annual_income": 1400000,
+          "category": "General",
+          "application_date": "2026-09-01",
+          "documents": [
+            "identity proof",
+            "degree certificate"
+          ]
+        }
+      },
+      "before": "ineligible",
+      "after": "ineligible"
+    },
+    {
+      "policy": "contradictory",
+      "applicant": {
+        "name": "Isha \u2013 conflicting rules",
+        "details": {
+          "date_of_birth": "2000-01-01",
+          "education_level": "bachelor",
+          "marks": 75,
+          "annual_income": 600000,
+          "category": "General",
+          "application_date": "2026-04-01",
+          "documents": [
+            "identity proof",
+            "degree certificate"
+          ]
+        }
+      },
+      "before": "eligible",
+      "after": "undetermined"
+    },
+    {
+      "policy": "contradictory",
+      "applicant": {
+        "name": "Akash \u2013 conflict overrides outcome",
+        "details": {
+          "date_of_birth": "2000-01-01",
+          "education_level": "bachelor",
+          "marks": 95,
+          "annual_income": 600000,
+          "category": "General",
+          "application_date": "2026-04-01",
+          "documents": [
+            "identity proof",
+            "degree certificate"
+          ]
+        }
+      },
+      "before": "ineligible",
+      "after": "undetermined"
+    }
+  ]
+}
